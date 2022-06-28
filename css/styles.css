@@ -4,56 +4,76 @@
 body { /*default body style (black Verdana)*/
   font-family:Verdana;
   color:#000000; 
+  margin: 2px;
 }
 
-.menu { /* menu style */
-  float: left;
-  background-color: #ED2828;
-  width: 20%;
-  text-align: center;
+/* Main Page Setting - index.html */
+
+/* head */
+.head-img {
+  background: url(../images/head.jpg) no-repeat;
+  height: 250px;
+  width: 500px;
+  margin-bottom: 10px;
+  background-position: 0 0;
+  background-size: cover;
 }
 
-.menu a { /* style of links within menus */
-  background-color: #28ED31;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: black;
-}
-
-.responsive { /* makes elements,resize responsively,*/
-  max-width:100%;
-  max-height:100%;
-}
-
-.center { /*centers an element*/
-  position: relative;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, 0%);
-}
-
-.main {
-  float: left;
-  background-color: #dd2118;
-  width: 60%;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.right {
-  background-color: #49CAD2;
-  float: left;
-  width: 20%;
+/* search bar */
+form.search-bar input[type=text] {
   padding: 15px;
-  margin-top: 7px;
-  text-align: center;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  margin-bottom: 10px;
+  background: #f1f1f1;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+form.search-bar button {
+  float: right;
+  width: 100px;
+  padding: 15px;
+  background: #62b8ff;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
+
+form.search-bar button:hover {
+  background: #0b7dda;
+}
+
+form.search-bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  align-items: stretch;
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: #8dc6f5;
+  color: white;
+  width: 150px;
+  margin: 8px;
+  text-align: center;
+  line-height: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.flex-container a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {color:#0a0886;}  /* mouse on */

@@ -1,36 +1,82 @@
 <!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-<!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
-<body style="font-family:Verdana;">
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World</h1>
-</div>
+    <!-- the search icon from internet: https://fontawesome.com/v4/icon/search -->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  </head>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/a">Normal Rabbit</a>
-    <a href="/b">Gray Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
-  </div>
+  <body>
+    <div class="head-img">
+      <!-- <h1>Hello World</h1> -->
+    </div>
 
-  <div class="main">
-    <h2>Why are these colors so ugly?</h2>
-    <p>Sure makes you feel motivated to pick a better color-scheme for yourself instead of sticking with these ugly default colors, huh? >:)</p>
-  </div>
-
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
-  </div>
-</div>
+    <form class="search-bar" action="/" style="max-width:500px">
+      <input type="text" placeholder="Yosemite National Park" name="search">
+      <button type="submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
 
 
-</body>
+    <div class="flex-container">
+      <div><a href="states.html" target="_blank">AL</a></div>
+      <div><a href="states.html" target="_blank">AK</a></div>
+      <div><a href="states.html" target="_blank">AZ</a></div> 
+
+      <div><a href="states.html" target="_blank">AR</a></div>
+      <div><a href="states.html" target="_blank">CA</a></div>
+      <div><a href="states.html" target="_blank">CO</a></div>
+
+      <div><a href="states.html" target="_blank">CT</a></div>
+      <div><a href="states.html" target="_blank">DE</a></div>
+      <div><a href="states.html" target="_blank">DC</a></div>
+
+      <div><a href="states.html" target="_blank">FL</a></div>
+      <div><a href="states.html" target="_blank">GA</a></div>
+      <div><a href="states.html" target="_blank">HI</a></div>
+
+      <div><a href="states.html" target="_blank">ID</a></div>
+      <div><a href="states.html" target="_blank">IL</a></div>
+      <div><a href="states.html" target="_blank">IN</a></div>
+
+      <div><a href="states.html" target="_blank">IA</a></div>
+      <div><a href="states.html" target="_blank">KS</a></div>
+      <div><a href="states.html" target="_blank">KY</a></div>
+
+      <div><a href="states.html" target="_blank">LA</a></div>
+      <div><a href="states.html" target="_blank">ME</a></div>
+      <div><a href="states.html" target="_blank">MD</a></div>
+    </div>
+
+
+
+    <!-- <div style="overflow: auto">
+      <div class="menu">
+        <a href="/a">Normal Rabbit</a>
+        <a href="/b">Gray Rabbit</a>
+        <a href="/c">Sepia Rabbit</a>
+      </div>
+
+      <div class="main">
+        <h2>Why are these colors so ugly?</h2>
+        <p>
+          Sure makes you feel motivated to pick a better color-scheme for
+          yourself instead of sticking with these ugly default colors, huh? >:)
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>
+          This is some example code prepared for CS160: User Interface Design &
+          Development, Summer 2022.
+        </p>
+      </div> -->
+    </div>
+  </body>
 </html>
-
