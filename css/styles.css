@@ -13,25 +13,25 @@ body { /*default body style (black Verdana)*/
 .head-img {
   background: url(../images/head.jpg) no-repeat;
   height: 250px;
-  width: 500px;
-  margin-bottom: 10px;
+  width: 32%;
+  margin-bottom: 0.3%;
   background-position: 0 0;
   background-size: cover;
 }
 
 /* search bar */
 form.search-bar input[type=text] {
-  padding: 15px;
+  padding: 3.35%;
   font-size: 17px;
   border: 1px solid grey;
   width: 80%;
-  margin-bottom: 10px;
+  margin-bottom: 0.3%;
   background: #f1f1f1;
 }
 
 form.search-bar button {
   float: right;
-  width: 100px;
+  width: 20%;
   padding: 15px;
   background: #62b8ff;
   color: white;
