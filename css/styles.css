@@ -12,8 +12,8 @@ body { /*default body style (black Verdana)*/
 /* head */
 .head-img {
   background: url(../images/head.jpg) no-repeat;
-  height: 250px;
-  width: 32%;
+  height: 180px;
+  width: 100%;
   margin-bottom: 0.3%;
   background-position: 0 0;
   background-size: cover;
@@ -54,7 +54,7 @@ form.search-bar::after {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 32%;
+  max-width: 100%;
   align-items: stretch;
   border: 1px solid grey;
   background-color: #f1f1f1;
