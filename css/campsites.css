@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body { /*default body style (black Verdana)*/
+  font-family:Verdana;
+  color:#000000; 
+  margin: 0px;
+}
+
+/* menu */
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.menu ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(83, 140, 154);
+  top: 0;
+  width: 100%;
+}
+
+.menu li {
+  float: left;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* main page */
+.main {
+  margin-top: 15.5%;
+}
+
+.main p {
+  position: fixed;
+  font-size: 14px;
+  border: 1px solid gray;
+  padding: 2.5%;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+}
+
+/* description */
+.desc p {
+  margin-top: 15%;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(66, 66, 68);
+}
+
+.desc button {
+  float: right;
+  margin-top: -8%;
+}
+
+.desc-flex-container {
+  display: column;
+  max-width: 100%;
+  align-items: stretch;
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+  padding: 3%;
+}
+
+/* pics of the description */
+.pics {
+  display: flex;
+  margin-top: 10%;
+}
+.pics > div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 98%;
+  margin: 1%;
+  text-align: left;
+  line-height: 100%;
+  font-size: 14px;
+}
+
+.desc-flex-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* basic info of the trails */
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info > div {
+  width: 33%
+}
+
+.info p {
+  font-size: 14px;
+  border-bottom: 1px solid gray;
+}
+
+/* map settings */
+.map p {
+  border-bottom: 1px solid gray;
+}
+
+/* weather */
+.weather {
+  display: flex;
+  width: 100%
+}
+
+.weather p {
+  width: 100%;
+  margin: 0;
+  padding-left: 10%;
+  padding: 8%;
+  font-size: 13px;
+  border: 1px solid gray;
+}
+
+
+/* discovery */
+.discovery {
+  display: flex;
+}
+
+.discovery img {
+  height: 15%; 
+  width: 15%;
+}
+
+.discovery-trails {
+  display: flex;
+  max-width: 100%;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.discovery-trails > div {
+  background-color: #628bac;
+  color: white;
+  width: 48%;
+  margin: 1%;
+  text-align: center;
+  line-height: 100%;
+  padding: 3%;
+  font-size: 13px;
+  text-align: left;
+}
+
+.discovery-trails a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {color:#afafbd;} 
+
+/* compare search bar */
+form.search-bar input[type=text] {
+  padding: 3.35%;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  margin-bottom: 1%;
+  background: #f1f1f1;
+}
+
+form.search-bar button {
+  float: right;
+  width: 20%;
+  padding: 3.35%;
+  background: #628bac;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search-bar button:hover {
+  background: #0b7dda;
+}
+
+form.search-bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* review */
+.review img {
+  width: 15%;
+  border: 1px solid gray;
+  float: left;
+}
+
+.review p {
+  margin-left: 18%;
+  font-size: 13px;
+  margin-top: -3%;
+}
+
+.review button {
+  float: right;
+  margin-top: -6%;
+}

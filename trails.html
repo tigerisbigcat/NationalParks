@@ -1,43 +1,120 @@
 <!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- let's link to our stylesheet (found in public/css/styles.css)-->
-<link rel="stylesheet" type="text/css" href="/css/styles.css"> 
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/trails.css" />
+    <!-- the search icon from internet: https://fontawesome.com/v4/icon/search -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
 
-<!-- you can also specify styles straight in html! Let's use Arial and gray text on this page.-->
-<body style="font-family:Arial;color:#333333;">
-<div style="background-color:#888888;padding:15px;text-align:center;"> 
-  <h1>Page 3, Yippee!</h1>
-</div>
+  <body>
+    <div style="overflow: auto">
+      
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="active" href="/"
+              >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </li>
+          <li><a href="/states.html">By States</a></li>
+          <li><a href="/trails.html">&nbsp;&nbsp;Trails&nbsp;&nbsp;</a></li>
+          <li><a href="/campsites.html">Campsites</a></li>
+          <li><a href="/trails_comparison.html">Trail Comparison</a></li>
+          <li><a href="/campsites_comparison.html">Campsites Comparison</a></li>
+        </ul>
+      </div>
 
+      <div class="main">
+        <p>Montclair Railroad Trail</p>
+      </div>
+    
+      <div class="desc-flex-container">
+        <div class="desc">
+          <p>Discover this 3.1-mile out-and-back trail near Oakland, California.
+            Generally considered...
+          </p>
+          <button>Show More</button>
+        </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/">Home</a>
-    <a href="/a">Normal Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
-  </div>
+        <div class="pics">
+          <div><img src="images/trail1.jpg" alt="trail1"></div>
+          <div><img src="images/trail2.jpg" alt="trail2"></div>
+          <div><img src="images/trail3.jpg" alt="trail3"></div> 
+        </div>
 
-  <div class="main">
-    <h2>This rabbit is very monochromatic and serious.</h2>
-    <img src="/images/BWbunny.jpg" alt="a greyscale rabbit" class="responsive center">
-        <p>Photo credits: 
-      <a href="https://unsplash.com/photos/u_kMWN-BWyU">Satyabratasm on Unsplash </a>
-   </p>
-  </div>
+        <div class="info">
+          <div><p>Length <br> 3.1 mi </p></div>
+          <div><p>Elevation <br> 242 ft </p></div>
+          <div><p>Type <br>Out&Back </p></div>
+        </div>
 
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
-  </div>
-</div>
+        <div class="map">
+          <img src="images/map.png" alt="map">
+          <p></p>
+        </div>
 
+        <div class="weather">
+          <div>
+            <img src="images/weather.png" alt="weather">
+          </div>
+          <div> 
+            <p>Warning: <br> Keep at least 50ft from bears! </p> 
+          </div>
+        </div>
 
+        <!-- the line under the weather pic -->
+        <div class="map"><p></p></div> 
 
+        <div class="discovery">
+          <p>Discovery: Look Around</p>
+          <img src="images/discovery.png" alt="eyes">
+        </div>
 
-</body>
+        <div class="discovery-trails">
+          <div><a href="trails.html" target="_blank">Lake Temescal Loop</a></div>
+          <div><a href="trails.html" target="_blank">Landvale Station Trail</a></div>
+        </div>
+
+        <!-- the line under the discovery -->
+        <div class="map"><p></p></div> 
+
+        <div class="compare">
+          <form class="search-bar" action="/trails.html" target="_blank" style="max-width:100%">
+            <input type="text" placeholder="Compare Trail with" name="search=trails.html">
+            <button type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <form class="search-bar" action="/campsites.html" target="_blank" style="max-width:100%">
+            <input type="text" placeholder="Find Your Campsite" name="search=trails.html">
+            <button type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- the line under the comparsion -->
+        <div class="map"><p></p></div> 
+        
+        <p>Reviews: </p>
+        <div class="review">
+          <img src="images/review.jpg" alt="face">
+          <p>Catherine H</p>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+        </div>
+
+        <p style="font-size: 13px; padding-bottom: 3%;">
+          Good place to relax. Busier close to 9:am.. 
+        </p>
+
+        <div class="review">
+          <button>Show More</button>
+        </div>
+      </div>  
+      
+    </div>
+  </body>
 </html>
-

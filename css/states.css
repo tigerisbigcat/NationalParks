@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body { /*default body style (black Verdana)*/
+  font-family:Verdana;
+  color:#000000; 
+  margin: 0px;
+}
+
+/* menu */
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.menu ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(83, 140, 154);
+  top: 0;
+  width: 100%;
+}
+
+.menu li {
+  float: left;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* main page */
+.main {
+  margin-top: 15.5%;
+}
+
+.main p {
+  position: fixed;
+  font-size: 14px;
+  border: 1px solid gray;
+  padding: 2.5%;
+  /* padding-left: 26%;
+  padding-right: 25%; */
+  width: 100%;
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+}
+
+/* show by */
+.dropdown {
+  margin-top: 18%;
+}
+
+.dropdown select {
+  height: 30px;
+  width: 65%;
+}
+
+/* list of the parks */
+.flex-container {
+  display: column;
+  max-width: 100%;
+  align-items: stretch;
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 98%;
+  margin: 1%;
+  text-align: left;
+  line-height: 100%;
+  padding: 3%;
+  font-size: 14px;
+  border-radius: 5%;
+}
+
+.flex-container a {
+  color:rgb(78, 74, 74);
+  text-decoration: none;
+}

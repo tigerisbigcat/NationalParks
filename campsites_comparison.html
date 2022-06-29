@@ -1,45 +1,83 @@
 <!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- let's link to our stylesheet (found in public/css/styles.css)-->
-<link rel="stylesheet" type="text/css" href="/css/styles.css"> 
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/campsites_comparison.css" />
+    <!-- the search icon from internet: https://fontawesome.com/v4/icon/search -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
 
-<!-- you can also specify styles straight in html! Let's use Courier New and brown text on this page.-->
-<body style="font-family:'Courier New';color:#513605;">
+  <body>
+    <div style="overflow: auto">
+      
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="active" href="/"
+              >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </li>
+          <li><a href="/states.html">By States</a></li>
+          <li><a href="/trails.html">&nbsp;&nbsp;Trails&nbsp;&nbsp;</a></li>
+          <li><a href="/campsites.html">Campsites</a></li>
+          <li><a href="/trails_comparison.html">Trail Comparison</a></li>
+          <li><a href="/campsites_comparison.html">Campsites Comparison</a></li>
+        </ul>
+        <div class="main">
+          <p>Campsites Comparison</p>
+        </div>
+      </div>
+    
+      <div class="desc-flex-container">
 
-<div style="background-color:#A99063;padding:15px;text-align:center;"> 
-  <h1>Page 4, What a Score!</h1>
-</div>
+        <div class="info">
+          <div><p>Sliver Hill Campsite</p></div>
+          <div><p>Wasdale Head Campsite</p></div>
+        </div>
 
+        <div class="pics">
+          <div><img src="images/camp-compare1.png" alt="camp-compare1"></div>
+          <div><img src="images/camp-compare2.jpg" alt="camp-compare2"></div>
+        </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/">Home</a>
-    <a href="/a">Normal Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
-  </div>
+        <div class="map"><p></p></div> 
 
-<!--let's override the background-color style from my stylesheet to make this section sepiatone, too.-->
-  <div class="main" style="background-color:#A99063"> 
-    <h2>This rabbit is sepiatone and likes to eat turnips.</h2>
-    <img src="/images/sepiabunny.jpg" alt="a sepiatone rabbit" class="responsive center">
-        <p>Photo credits: 
-      <a href="https://unsplash.com/photos/u_kMWN-BWyU">Satyabratasm on Unsplash </a>
-   </p>
-  </div>
+        <div class="info">
+          <div>
+            <p>Type: Car&VR <br>
+              Water: Yes <br>
+              WiFi: No <br>
+              Shower: No <br>
+              &nbsp;
+            </p>
+          </div>
+          <div>
+            <p>Type: VR <br>
+              Water: Yes <br>
+              WiFi: Yes <br>
+              Shower: Yes <br>
+              &nbsp;
+            </p>
+          </div>
+        </div>
 
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
-  </div>
-</div>
+        <div class="pics">
+          <div><img src="images/weather-compare1.png" alt="weather-compare1"></div>
+          <div><img src="images/weather-compare2.png" alt="weather-compare2"></div>
+        </div>
 
+        <!-- the line under the weather pic -->
+        <div class="map"><p></p></div> 
 
+        <div class="info">
+          <div><p><b>Warning:</b><br> Must Lock Your Food in Your Car to Avoid Bears! <br> &nbsp;</b></p></div>
+          <div><p><b>Warning:</b><br> Be Careful About the Campfire! <br> &nbsp;</b></p></div>
+        </div>
 
-
-</body>
+       
+      </div>  
+      
+    </div>
+  </body>
 </html>
-
